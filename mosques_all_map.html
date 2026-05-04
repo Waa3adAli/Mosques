@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1427b0bc3c6b8a6cecae073878f0ad2b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1427b0bc3c6b8a6cecae073878f0ad2b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1427b0bc3c6b8a6cecae073878f0ad2b = L.map(
+                "map_1427b0bc3c6b8a6cecae073878f0ad2b",
+                {
+                    center: [26.351577666666667, 43.964572],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e7e4732f2ff9f70aad184e3fee562d38 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e7e4732f2ff9f70aad184e3fee562d38.addTo(map_1427b0bc3c6b8a6cecae073878f0ad2b);
+        
+    
+            var marker_7bc9a0a7902d1556944a078ec997cd78 = L.marker(
+                [26.3289, 43.97455],
+                {
+}
+            ).addTo(map_1427b0bc3c6b8a6cecae073878f0ad2b);
+        
+    
+            var icon_448e09c7b982708e9437e7f8f9ca365f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07fac3e7558f2eccfbb5c637668d7a87 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_30ff311f4f0f5272204f017b5ef1d330 = $(`<div id="html_30ff311f4f0f5272204f017b5ef1d330" style="width: 100.0%; height: 100.0%;">     <b>Aba Al kahil</b><br>     ID: 101114<br>     Type: Jame'a<br>     Address: south Buraydah<br>     Imam: mohhamed     </div>`)[0];
+                popup_07fac3e7558f2eccfbb5c637668d7a87.setContent(html_30ff311f4f0f5272204f017b5ef1d330);
+            
+        
+
+        marker_7bc9a0a7902d1556944a078ec997cd78.bindPopup(popup_07fac3e7558f2eccfbb5c637668d7a87)
+        ;
+
+        
+    
+    
+            marker_7bc9a0a7902d1556944a078ec997cd78.bindTooltip(
+                `<div>
+                     Aba Al kahil
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7bc9a0a7902d1556944a078ec997cd78.setIcon(icon_448e09c7b982708e9437e7f8f9ca365f);
+            
+    
+            var marker_0003d283070c69bb28c97de6abc82786 = L.marker(
+                [26.372222, 43.927222],
+                {
+}
+            ).addTo(map_1427b0bc3c6b8a6cecae073878f0ad2b);
+        
+    
+            var icon_79b7c36fdbe13b816eb8f5470a050e79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95c796d60b824d4626f35a4ec407c0bd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0256771c9185d26c46914f97155f3244 = $(`<div id="html_0256771c9185d26c46914f97155f3244" style="width: 100.0%; height: 100.0%;">     <b>Bahles</b><br>     ID: 112456<br>     Type: Masjid<br>     Address: Buraydah<br>     Imam: Saleh     </div>`)[0];
+                popup_95c796d60b824d4626f35a4ec407c0bd.setContent(html_0256771c9185d26c46914f97155f3244);
+            
+        
+
+        marker_0003d283070c69bb28c97de6abc82786.bindPopup(popup_95c796d60b824d4626f35a4ec407c0bd)
+        ;
+
+        
+    
+    
+            marker_0003d283070c69bb28c97de6abc82786.bindTooltip(
+                `<div>
+                     Bahles
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0003d283070c69bb28c97de6abc82786.setIcon(icon_79b7c36fdbe13b816eb8f5470a050e79);
+            
+    
+            var marker_837b300d84f3f043f514f21147883317 = L.marker(
+                [26.353611, 43.991944],
+                {
+}
+            ).addTo(map_1427b0bc3c6b8a6cecae073878f0ad2b);
+        
+    
+            var icon_b9e247b9c9ca2278b4c22d074ed1ab74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3059e32b7f8260511a52f24a08d4bac5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e64aea93be2363c9a6bf3005d6058d32 = $(`<div id="html_e64aea93be2363c9a6bf3005d6058d32" style="width: 100.0%; height: 100.0%;">     <b>Eid prayer 1</b><br>     ID: 296210<br>     Type: Musalla<br>     Address: Buraydah<br>     Imam: Abdalaziz     </div>`)[0];
+                popup_3059e32b7f8260511a52f24a08d4bac5.setContent(html_e64aea93be2363c9a6bf3005d6058d32);
+            
+        
+
+        marker_837b300d84f3f043f514f21147883317.bindPopup(popup_3059e32b7f8260511a52f24a08d4bac5)
+        ;
+
+        
+    
+    
+            marker_837b300d84f3f043f514f21147883317.bindTooltip(
+                `<div>
+                     Eid prayer 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_837b300d84f3f043f514f21147883317.setIcon(icon_b9e247b9c9ca2278b4c22d074ed1ab74);
+            
+    
+            map_1427b0bc3c6b8a6cecae073878f0ad2b.fitBounds(
+                [[26.3289, 43.97455], [26.372222, 43.927222], [26.353611, 43.991944]],
+                {}
+            );
+        
+</script>
+</html>
