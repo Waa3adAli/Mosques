@@ -294,7 +294,12 @@ class MosqueApp:
             Address: {row[3]}<br>
             Imam: {row[5]}
             """
-            folium.Marker([lat, lon], popup=popup, tooltip=row[1]).add_to(mosque_map)
+            folium.Marker(
+                 [lat, lon],
+                 popup=popup,
+                 tooltip=row[1],
+                    icon=folium.DivIcon(html="<div style='font-size:30px;'>🕌</div>")
+             ).add_to(mosque_map)
 
         mosque_map.save(output_file)
         webbrowser.open("file://" + os.path.abspath(output_file))
